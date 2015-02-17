@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+	<persistence-unit name="exemple1WCW">
+	<jta-data-source>java:/exempleCWC</jta-data-source>
+	<class>org.esprit.domain.Activity</class>
+	<class>org.esprit.domain.Administrator</class>
+	<class>org.esprit.domain.Director</class>
+	<class>org.esprit.domain.Employee</class>
+	<class>org.esprit.domain.Personnel</class>
+	<class>org.esprit.domain.Project</class>
+	<class>org.esprit.domain.Reward</class>
+	<class>org.esprit.domain.Task</class>
+	<class>org.esprit.domain.Team</class>
+	<class>org.esprit.domain.Team_Leader</class>
+	<class>org.esprit.domain.Workload</class>
+	<properties>
+	<property name="hibernate.hbm2ddl.auto" value="update"/>
+	
+	</properties>
+	</persistence-unit>
+</persistence>
